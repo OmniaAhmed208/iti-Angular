@@ -1,0 +1,25 @@
+<!-- <p>first works!</p> -->
+
+<div class="task1">
+
+  <!-- <div class="all">
+    <form>
+      <input type="text" placeholder="Name" [(ngModel)]="name" class="text">
+
+      <input type="reset" value="Reset" class="resetBtn">
+    </form>
+
+    <div class="data"><h1>Data: {{name}}</h1></div>
+  </div> -->
+
+  <div class="all">
+    <form>
+      <input type="text" placeholder="Name" class="text" (input)="getData($event)">
+
+      <input type="reset" value="Reset" class="resetBtn" (click)="reset()">
+    </form>
+
+    <div class="data"><h1>Data: {{name}}</h1></div>
+  </div>
+
+</div>
