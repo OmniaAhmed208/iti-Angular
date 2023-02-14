@@ -1,0 +1,36 @@
+.task3{
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  width: 100%;
+}
+.students{
+  width: 60%;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table{
+  background: bisque;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+tr,th,td{
+  padding: 9px 23px;
+  font-size: 20px;
+}
+.data{
+  color:#fff;
+  background: #7c6d5a;
+  text-align: center;
+}
+.data td{
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  padding: 10px 80px;
+}

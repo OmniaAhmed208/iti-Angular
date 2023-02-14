@@ -6,12 +6,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { ImgsliderComponent } from './imgslider/imgslider.component';
+import { StudentsComponent } from './registerationStudentsComponent/students/students.component';
+import { RegistrationComponent } from './registerationStudentsComponent/registration/registration.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    ImgsliderComponent
+    ImgsliderComponent,
+    StudentsComponent,
+    RegistrationComponent,
   ],
   imports: [
     BrowserModule,

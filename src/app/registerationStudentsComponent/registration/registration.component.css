@@ -1,0 +1,42 @@
+.task3{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  width: 100%;
+}
+.registration{
+  width: 60%;
+  border-radius: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.table{
+  background: bisque;
+    padding: 12px 75px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+tr,th,td{padding: 9px;}
+.registration input{
+  padding: 13px 0px 15px 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px;
+  border: none;
+  outline: none;
+  background: #00000061;
+}
+.registration input[type="button"]{
+  font-size: 23px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 20px auto;
+  color: #fff;
+  padding: 9px 60px;
+  background-color: rgb(125 81 81);
+}

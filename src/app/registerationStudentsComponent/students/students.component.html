@@ -1,0 +1,29 @@
+{{studentsData}}
+
+<div class="task3">
+  <div class="students">
+    <div class="table">
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <!-- <tr class="data">
+          <td>hhh</td>
+          <td>jjj</td>
+        </tr>
+        <tr class="data">
+          <td>hhh</td>
+          <td>jjj</td>
+        </tr> -->
+        <tr *ngFor="let s of studentsData" class="data">
+          <td>{{s.name}}</td>
+          <td>{{s.age}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
