@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class StudentsComponent {
 
-  @Input() studentsData:{name:string,age:string}[]=[];
+  @Input() studentsData:{name:string, age:string, email:string}[]=[];
 
+  
 }

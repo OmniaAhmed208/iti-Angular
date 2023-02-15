@@ -1,0 +1,27 @@
+<div class="container alert alert-primary " style="width:50%">
+<div class="task3">
+  <form [formGroup]="myFormVlaidation">
+
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Name</label>
+      <input formControlName="name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+      <span *ngIf = "!NameValid">The Length of Name should be 3 or more</span>
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+      <input formControlName="mail" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label">Age</label>
+      <input formControlName="age" type="text" class="form-control" id="exampleFormControlInput1" placeholder="age">
+      <span *ngIf = "!AgeValid">The Age should be between 20 and 40</span>
+    </div>
+
+    <input type="button" value="Add Data" class="btn btn-primary" (click)="Add()">
+    <!--(click)="Add(name.value, age.value, email.value)"-->
+
+  </form>
+</div>
+</div>
+
+

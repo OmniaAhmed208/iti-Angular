@@ -6,15 +6,15 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
   styleUrls: ['./registration.component.css']
 })
 export class RegistrationComponent {
-  name = " ";
+  name = "";
   age = " ";
 
   @Output() myEvent = new EventEmitter();
 
   Add(){
-    
+
     if(+this.age >= 20 && +this.age <= 40 && this.name.length >= 3){
-      
+
       let student = {name:this.name, age:this.age};
       this.myEvent.emit(student);
 
@@ -22,6 +22,6 @@ export class RegistrationComponent {
       this.name='';
       this.age='';
     }
-  }  
+  }
 
 }
