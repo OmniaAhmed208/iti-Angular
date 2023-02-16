@@ -5,7 +5,7 @@
 
       <h3>Name</h3>
       <input type="text" placeholder="Name" [(ngModel)]="name"><br>
-      <span *ngIf = "name.length < 3">The Length of Name should be 3 or more</span>
+      <span *ngIf = "name && (name.length < 3)">The Length of Name should be 3 or more</span>
 
       <h3>Age</h3>
       <input type="text" placeholder="Age" [(ngModel)]="age"><br>

@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "name": "ahmed",
+      "age": "23",
+      "email": "ahmed@yahoo.com",
+      "address": "123 st",
+      "city": "cairo",
+      "phone": "010",
+      "id": 1
+    },
+    {
+      "name": "hendaAhmed",
+      "age": "34",
+      "email": "henda32@yahoo.com",
+      "address": "123 st",
+      "city": "cairo",
+      "phone": "012",
+      "id": 2
+    }
+  ]
+}

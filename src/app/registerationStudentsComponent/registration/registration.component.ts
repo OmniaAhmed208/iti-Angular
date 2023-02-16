@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 })
 export class RegistrationComponent {
   name = "";
-  age = " ";
+  age = "";
 
   @Output() myEvent = new EventEmitter();
 

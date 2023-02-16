@@ -19,7 +19,7 @@
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: 450px;
 }
 tr,th,td{padding: 9px;}
 .registration input{

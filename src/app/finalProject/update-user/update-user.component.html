@@ -1,0 +1,39 @@
+<div  *ngIf="student" class="container alert alert-dark" style="width: 50%;">
+  <form class="row g-3">
+
+    <div class="col-md-6">
+      <label for="name" class="form-label">Name</label>
+      <input #name type="text" class="form-control" id="name" value={{student.name}}>
+    </div> 
+
+    <div class="col-md-6">
+      <label for="phone" class="form-label">Phone</label>
+      <input #phone type="number" class="form-control" id="phone" value={{student.phone}}>
+    </div>
+
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input #email type="email" class="form-control" id="email" placeholder="example@e.com" value={{student.email}}>
+    </div>
+
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Address</label>
+      <input #address type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" value={{student.address}}>
+    </div>
+
+    <div class="col-md-6">
+      <label for="age" class="form-label">Age</label>
+      <input #age type="number" class="form-control" id="age" value={{student.age}}>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">City</label>
+      <input #city type="text" class="form-control" id="inputCity" value={{student.city}}>
+    </div>
+    
+    <div class="col-6">
+      <button type="submit" class="btn btn-primary"
+      (click)="Update(name.value,age.value,email.value,address.value,city.value,phone.value)">Update Data</button>
+    </div>
+  </form>
+</div>

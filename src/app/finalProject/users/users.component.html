@@ -1,0 +1,36 @@
+<table class="table table-striped container" *ngIf="users; else loading">
+  <thead class="table-dark">
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Email</th>
+      <th scope="col">Age</th>
+      <th scope="col">City</th>
+      <th scope="col">Address</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let u of users">
+      <th scope="row">{{u.id}}</th>
+      <td>{{u.name}}</td>
+      <td>{{u.email}}</td>
+      <td>{{u.age}}</td>
+      <td>{{u.city}}</td>
+      <td>{{u.address}}</td>
+      <td>{{u.phone}}</td>
+      <td>
+          <a routerLink="/user-details/{{u.id}}" style="margin-right:5px"><button class="btn btn-primary">Details</button></a>
+          <a routerLink="/update-user/{{u.id}}" style="margin-right:5px"><button class="btn btn-success">Update</button></a>
+          <a routerLink="/users/{{u.id}}" (click)="delete()"><button class="btn btn-danger">Delete</button></a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<ng-template #loading>
+  <div class="alert alert-primary container text-center" style="width: 50%;">
+    <h5>Loading....</h5>
+  </div>
+</ng-template>

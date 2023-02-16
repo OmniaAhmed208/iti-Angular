@@ -11,7 +11,7 @@ export class RegisterComponent {
 
   myFormVlaidation = new FormGroup({
     name: new FormControl("omnia",Validators.minLength(3)), //Validators.required
-    age: new FormControl(20,[Validators.min(20), Validators.max(40)]),
+    age: new FormControl(22,[Validators.min(20), Validators.max(40)]),
     mail:new FormControl("omnia@o.com")
   });
 
