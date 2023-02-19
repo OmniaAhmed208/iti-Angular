@@ -1,0 +1,33 @@
+<div *ngIf="user ; else falseBlock" class="container" style="width: 50%;">
+
+  <table class="table table-striped container">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Age</th>
+        <th scope="col">City</th>
+        <th scope="col">Address</th>
+        <th scope="col">Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">{{user.id}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.city}}</td>
+        <td>{{user.address}}</td>
+        <td>{{user.phone}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- {{user.name}} -->
+<ng-template #falseBlock>
+  <div class="alert alert-primary container text-center" style="width: 50%;">
+    <h5>Loading....</h5>
+  </div>
+</ng-template>
